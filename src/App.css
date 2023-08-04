@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +12,71 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* CSS for side-nav */
+.sidenav {
+  height: 100%;
+  width: 60px; /* Set the initial width of the side navigation */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6277cc;
+  padding-top: 20px;
+  transition: width 0.3s; /* Adding the transition effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidenav.expanded {
+  width: 200px; /* Set the expanded width of the side navigation */
+}
+
+.sidenav li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #c9e6e8;
+  display: block;
+}
+
+.sidenav li a {
+  color: white;
+}
+.p1 {
+  display: block;
+  margin-top: 12px;
+}
+.p2 {
+  display: none;
+}
+
+.sidenav li:hover a {
+  size: "xl";
+  color: #101010;
+  border-radius: 6px;
+  transition: all 0.4s linear;
+  transform: scale(1.1);
+  padding-top: 10px;
+  opacity: 75%;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: #ede4e4;
+  font-size: 24px;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: all 0.6s linear;
+  transform: scale(1.1);
+}
+
+.why-choose-us li {
+  list-style-type: none;
 }
