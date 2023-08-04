@@ -260,20 +260,23 @@ const HomePage = () => {
       {/* Testimonials */}
 
       {/* About Us */}
-      <section className="about text-center mb-5" id="about">
-        <h2>About Us</h2>
-        <p>
-          Write a brief background of your recruitment startup, its mission, and
-          vision. Highlight your team's expertise and dedication to finding the
-          best talent.
-        </p>
-      </section>
-      <div className="text-center ">
-        {" "}
+
+      <div
+        style={{ backgroundColor: "black", color: "white" }}
+        className="text-center "
+      >
+        <section className="about text-center mb-5" id="about">
+          <h2>About Us</h2>
+          <p>
+            Write a brief background of your recruitment startup, its mission,
+            and vision. Highlight your team's expertise and dedication to
+            finding the best talent.
+          </p>
+        </section>{" "}
         {/* Contact Us */}
         <section className="contact" id="contact">
           <h2>Contact Us</h2>
-          {/* Add contact information and a contact form */}
+          <p>coursify.india@gmail.com</p>
         </section>
         {/* Footer */}
         <footer>
